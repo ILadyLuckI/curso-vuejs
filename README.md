@@ -5,7 +5,7 @@ O objetivo deste repositório é publicar meus códigos referentes a exercicios 
 | :placard: Vitrine.Dev |     |
 | -------------  | --- |
 | :sparkles: Daiana        | **exercicios do curso VueJS**
-| :label: Tecnologias | JavaScript | VueJs
+| :label: Tecnologias | JavaScript -  VueJs
 
 ---
 
