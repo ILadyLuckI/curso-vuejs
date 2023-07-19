@@ -16,5 +16,11 @@ Neste repositório colocarei alguns códigos, exercícios e desafios que estou a
 ### Pasta Introdução
 Neste módulo aprendi a acessar a documentação e fazer importação do Vue.
 
+### Pasta DOM
+Neste módulo, trago códigos referentes ao módulo DOM, onde aprendi conceitos sobre templates, instancia VueJS, binding de atributos, diretivas e tem alguns desafios resolvidos.
+
+
+Obs: muitos arquivos contém vários comentários meus, pois é a maneira como gosto de estudar e acho mais facil de absorver o conteúdo, porém eu sei que em um código sério isto não é aceitável. Relevem por favor! ;)
+
 
 
