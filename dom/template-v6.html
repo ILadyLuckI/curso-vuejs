@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprimindo HTML puro</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<!--Como imprimir HTML dentro do VueJS, com ressalvas de segurança-->
+<body>
+    <div id="app">
+        <!--para trechos de html que não precisam ser atualizados
+        usar a diretiva v-once, assim o vuejs não atualiza o conteúdo da tag
+        que foi marcada com o v-once-->
+        <p v-once>{{ titulo }}</p>
+        <p>{{ saudacao() }}</p>
+        <!--para usar as propriedades dentro do html (como o href),
+        é necessário usar as diretivas do Vue, como v-bind, que faz a ligação (bind)
+        entre um dado que está na Vue instance e um atributo que esta dentro da tag html.
+        O HTML permite que novas propriedades sejam adicionadas-->
+        <a v-bind:href="link">Google</a>
+        <hr>
+        <p v-html="linkHtml"></p>
+    </div>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                titulo: 'Usando VueJS!',
+                link: 'http://google.com.br',
+                linkHtml: '<a href="https://google.com.br">Google</a>'
+            },
+            methods: {
+                //dentro da instancia do VUE, é possivel acessar o titulo usando o 'this'
+                saudacao: function () {
+                    this.titulo = 'Bom dia!!'
+                    return this.titulo
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interpolação</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+
+<!--Usando VueJS para interagir com o DOM-->
+<body>
+    <div id="app">
+        <!--não é aconselhado usar expressões muito longas dentro do double mustache,
+        apenas operações simples, que não envolvam o uso de variáveis e constantes, if else, etc...-->
+        <p>{{ 1 + 1 -100 * 2 }}</p>
+        <p>{{ contador }}</p>
+        <p>{{ contador > 10 ? 'Maior do que 10' : 'Menor do que 10'}}</p>
+        <button v-on:click="somar">Somar 1</button>
+    </div>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                contador: 0
+            },
+            methods: {
+                somar() {
+                    this.contador++
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

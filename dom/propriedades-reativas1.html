@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedades reativas</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+
+<!--PROPRIEDADES REATIVAS - USANDO TWO WAY BINDING-->
+
+<body>
+    <div id="app">
+        <p>{{ titulo }}</p>
+        <!--v-model garante o two way data binding, causando uma 
+        dupla atualização, uma no template, e outra na instancia 
+        do Vue-->
+        <input type="text" v-model="titulo">
+    </div>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                titulo: 'Usando VueJS!'
+            }
+        })
+    </script>
+    
+</body>
+</html>

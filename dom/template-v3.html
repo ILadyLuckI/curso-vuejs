@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <p>{{ titulo }}</p>
+        <p>{{ saudacao() }}</p>
+        <!--para usar as propriedades dentro do html (como o href),
+        é necessário usar as diretivas do Vue, como v-bind, que faz a ligação (bind)
+        entre um dado que está na Vue instance e um atributo que esta dentro da tag html.
+        O HTML permite que novas propriedades sejam adicionadas-->
+        <a v-bind:href="link">Google</a>
+    </div>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                titulo: 'Usando VueJS!',
+                link: 'http://google.com.br'
+            },
+            methods: {
+                //dentro da instancia do VUE, é possivel acessar o titulo usando o 'this'
+                saudacao: function () {
+                    return this.titulo
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

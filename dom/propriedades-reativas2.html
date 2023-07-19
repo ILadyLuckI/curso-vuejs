@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedades reativas</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+
+<!--PROPRIEDADES REATIVAS - USANDO TWO WAY BINDING-->
+
+<body>
+    <div id="app">
+        <button v-on:click="aumentar">Aumentar</button>
+        <button v-on:click="contador2++">Aumentar 2</button>
+        <button v-on:click="diminuir">Diminuir</button>
+        <p>Contador: {{ contador }} | {{contador2 }}</p>
+        <p>Resultado: {{ resultado }}</p>
+        <!--v-model garante o two way data binding, causando uma 
+        dupla atualização, uma no template, e outra na instancia 
+        do Vue-->
+    </div>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                contador: 0,
+                contador2: 0,
+            },
+            computed: {
+                resultado() {
+                    console.log('Método computed resultado chamado...')
+                    return this.contador >= 5 ?
+                        'Maior ou igual a 5' : 'Menor que 5'
+                }
+            },
+            methods: {
+                aumentar() {
+                    this.contador++
+                },
+                diminuir() {
+                    this.contador--
+                },
+                /* resultado() {
+                    console.log('Metodo resultado chamado...')
+                    return this.contador >= 5 ?
+                    'Maior ou igual a 5' : 'Menor que 5'
+                } */
+            }
+        })
+    </script>
+    
+</body>
+</html>
