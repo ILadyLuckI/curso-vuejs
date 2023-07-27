@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REFS</title>
+</head>
+
+<!-- usando refs-->
+
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+    <div id="app">
+        <!--No template pega-se a referencia do elemento na DOM-->
+        <!--Ref é uma propriedade do VUe, e foge do padrão com :na frente-->
+        <h1 ref="aulaRef">{{ aula }}</h1>
+        <h2>{{ modulo }}</h2>
+        <button @click="alterarAula">Alterar Aula</button>
+        <button @click="alterarModulo">Alterar Módulo</button>
+    </div>
+
+    <script>
+        const vm = new Vue({
+            el: '#app',
+            data: {
+                aula: 'Aula: Usando Refs',
+                modulo: 'Modulo: Instância Vue'
+            },
+            //criando as funções:
+            methods: {
+                alterarAula() {
+                    this.aula += '#'
+                },
+                alterarModulo() {
+                    this.modulo += '#'
+                }
+            }
+        })
+
+        vm.$refs.aulaRef.innerText = 'Alterando diretamente :('
+    </script>
+</body>
+</html>

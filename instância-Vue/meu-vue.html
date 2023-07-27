@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando um mini framework</title>
+</head>
+
+<!--Criando um mini framework-->
+<!--observações: a web é baseada em javascript, e JS é fortemente
+baseado no padrão observer-->
+<body>
+    <!--<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>-->
+
+    <!--fazendo com que o 'framework' interpole os valores-->
+    <div id="app">
+        <!--a função 'trim' tira os espaços em branco dentro do double mustache-->
+        {{ nome }} {{ sobrenome }} {{ 1 + 1 }}
+    </div>
+
+    <script>
+        function MeuVue(params) {
+            this.$el = document.querySelector(params.el)
+            this.$data = params.data
+            //aqui faremos um 'for', pegando cada um dos atributos que
+            //foram passados dentro do 'this.$data'
+            //'this.$data' é um objeto que foi passado a partir de 'params'
+            for(let atr in this.$data) {
+                /*Para cada atributo, vamos criar uma propriedade 'defineProperty', 
+                e vou definir, passando 2 propriedades, a 1ª é o objeto 'this' eo 2º é 
+                o nome do atributo que for criado, e 3º vai ser passado um objeto 
+                para personalizar algumas coisas*/
+                Object.defineProperty(this, atr, {
+                    //método 'get' vai servir de 'proxi'
+                    get: () => {
+                        return this.$data[atr]
+                    },
+                    //'set' vai receber um valor e vai alterar dentro de '$data'
+                    set: value => {
+                        this.$data[atr] = value
+                        //uma vez que o 'set' percebe que o valor passado é diferente 
+                        //do valor armazenado, podemos disparar notificações no template
+                        //para que o dado seja atualizado
+                    }
+                })
+            }
+            //interpolação com regex
+            const regex = /\{\{([\s\w+]*)\}\}/g
+            this.$el.innerHTML = this.$el.innerHTML.replace(regex, (match, $1) => {
+                const value = this[$1.trim()]
+                return value ? value : eval($1)
+            })
+        }
+
+        //chamando a função 'MeuVue'
+        const vm = new MeuVue({
+            el: '#app',
+            data: { 
+                nome: 'Maria',
+                sobrenome: 'Silva'}
+        })
+
+        console.log(vm.nome)
+        console.log(vm.$data.nome)
+
+        vm.nome = 'Pedro'
+        console.log(vm.nome)
+        console.log(vm.$data.nome)
+/* 
+        vm.idade = 31
+        console.log(vm.$data.idade) */
+    </script>
+    
+</body>
+</html>

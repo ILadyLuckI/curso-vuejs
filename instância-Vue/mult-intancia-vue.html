@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplas instâncias VueJS</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+    <div id="app1">
+        {{ titulo1 }}
+        <button @click="alterar">Alterar</button>
+    </div>
+    <div id="app2">
+        {{ titulo2 }}
+        <button @click="alterar">Alterar</button>
+    </div>
+
+    <script>
+        new Vue({
+            el: '#app1',
+            data: {
+                titulo1: 'teste1'
+            },
+            methods: {
+                alterar() {
+                    //'+=' é uma atribuição aditiva
+                    this.titulo1 += '!!!'
+                }
+            }
+        })
+
+        new Vue({
+            el: '#app2',
+            data: {
+                titulo2: 'teste2'
+            },
+            methods: {
+                alterar() {
+                    //'+=' é uma atribuição aditiva
+                    this.titulo2 += '!!!'
+                }
+            }
+        })
+    </script>
+</body>
+</html>

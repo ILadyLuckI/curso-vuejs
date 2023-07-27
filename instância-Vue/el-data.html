@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$el $data</title>
+</head>
+
+<!--O '$el' representa a estrutura HTML que foi definida
+a partir do template e que esta sendo usado na DOM, e o '$data
+representa os dados que foram passados na contrução da instancia'-->
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+    <div id="app">
+        {{ titulo }}
+        <button @click="alterar">Alterar</button>
+    </div>
+
+
+    <script>
+        /*ao inves de criar duas aplicações, é mais recomendado
+        criar uma aplicação maior que acomode as necessidades, 
+        e NÃO fazer como no exemplo abaixo*/
+        const vm = new Vue({
+            el: '#app',
+            data: {
+                titulo: 'teste1'
+            },
+            methods: {
+                alterar() {
+                    //'+=' é uma atribuição aditiva
+                    this.titulo += '!'
+                }
+            }
+        })
+    </script>
+</body>
+</html>
