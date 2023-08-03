@@ -35,6 +35,9 @@ função callback.
 ### Pasta componente-avancado-desafio-src
 Neste desafio, o botão deve retornar a sua respectiva cor na box. Excelente desafio para fixar os estudos sobre a comunicação entre os componentes, e como fazer o registro dos mesmos.
 
+### Pasta formulario-exercicios-src
+Nesta pasta estão contidos os exercicios que fiz para a criação de um formulário com Vue.Js, além de testar modificadores do input como <code>lazy</code> e <code>trim</code>, <code>prevent</code>, <code>v-model</code>, <code>:value</code> e <code>:key</code>.
+
 ❎ Obs: muitos arquivos contém vários comentários meus, pois é a maneira como gosto de estudar e acho mais facil de absorver o conteúdo, porém eu sei que em um código sério isto não é aceitável. Relevem por favor! ;)
 
 
