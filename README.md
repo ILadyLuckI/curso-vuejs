@@ -25,6 +25,9 @@ Neste módulo os códigos são referentes ao uso de Vue com v-if, v-else, v-for,
 ### Pasta instancia-Vue
 Neste módulo do curso aprendi conceitos sobre instâncias Vue, como usar multiplas instancias, montar um template, atualizar o DOM, ciclo de vida da intância, e componentes.
 
+### Pasta componente-intro-src
+Estes arquivos contém uma introdução sobre componentes e como registra-los de forma global.
+
 ❎ Obs: muitos arquivos contém vários comentários meus, pois é a maneira como gosto de estudar e acho mais facil de absorver o conteúdo, porém eu sei que em um código sério isto não é aceitável. Relevem por favor! ;)
 
 
