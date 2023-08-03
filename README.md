@@ -32,6 +32,9 @@ Estes arquivos contém uma introdução sobre componentes e como registra-los de
 Neste módulo o foco foi aprender a fazer a comunicação entre os componentes. Uma das formas abordadas neste módulo foi a comunicação indireta via 
 função callback.
 
+### Pasta componente-avancado-desafio-src
+Neste desafio, o botão deve retornar a sua respectiva cor na box. Excelente desafio para fixar os estudos sobre a comunicação entre os componentes, e como fazer o registro dos mesmos.
+
 ❎ Obs: muitos arquivos contém vários comentários meus, pois é a maneira como gosto de estudar e acho mais facil de absorver o conteúdo, porém eu sei que em um código sério isto não é aceitável. Relevem por favor! ;)
 
 
