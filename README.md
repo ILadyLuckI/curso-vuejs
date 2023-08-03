@@ -28,6 +28,10 @@ Neste módulo do curso aprendi conceitos sobre instâncias Vue, como usar multip
 ### Pasta componente-intro-src
 Estes arquivos contém uma introdução sobre componentes e como registra-los de forma global.
 
+### Pasta componentes-comunicacao-src
+Neste módulo o foco foi aprender a fazer a comunicação entre os componentes. Uma das formas abordadas neste módulo foi a comunicação indireta via 
+função callback.
+
 ❎ Obs: muitos arquivos contém vários comentários meus, pois é a maneira como gosto de estudar e acho mais facil de absorver o conteúdo, porém eu sei que em um código sério isto não é aceitável. Relevem por favor! ;)
 
 
