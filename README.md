@@ -38,6 +38,9 @@ Neste desafio, o botão deve retornar a sua respectiva cor na box. Excelente des
 ### Pasta formulario-exercicios-src
 Nesta pasta estão contidos os exercicios que fiz para a criação de um formulário com Vue.Js, além de testar modificadores do input como <code>lazy</code> e <code>trim</code>, <code>prevent</code>, <code>v-model</code>, <code>:value</code> e <code>:key</code>.
 
+### Pasta formulario-desafio-src
+A proposta desse desafio é criar um formulario que contenha nome e sobrenome, email, senha e um botão para armazenar os dados. Foram criados dois arquivos 'NomeCompleto.vue' e 'Rotulo.vue' que serão importados para o arquivo 'App.vue'.
+
 ❎ Obs: muitos arquivos contém vários comentários meus, pois é a maneira como gosto de estudar e acho mais facil de absorver o conteúdo, porém eu sei que em um código sério isto não é aceitável. Relevem por favor! ;)
 
 
