@@ -57,6 +57,9 @@ Neste desafio o filtro deve contar o tamanho de cada palavra e escrever o numero
 ### Pasta super-quiz-src
 Neste desafio criamos um quiz, para demosntrar como ficam as animações com css.
 
+### Pasta http-src
+Neste exercicio fizemos a integração do vue com o Firebase do Google.
+
 
 ❎ Obs: muitos arquivos contém vários comentários meus, pois é a maneira como gosto de estudar e acho mais facil de absorver o conteúdo, porém eu sei que em um código sério isto não é aceitável. Relevem por favor! ;)
 
