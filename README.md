@@ -44,6 +44,10 @@ A proposta desse desafio é criar um formulario que contenha nome e sobrenome, e
 ### Pasta diretivas-exercicios-src
 Nos exercícios deste módulo vimos as diretivas <code>v-text</code>, <code>v-html</code>, métodos hooks (<code>bind</code>, <code>inserted</code>, <code>update</code>, <code>component</code>, <code>unbind</code>)
 
+### Pasta diretivas-desafio-src
+Para este desafio foi pedido escrevessemos uma diretiva que funcione com o v-on. 
+
+
 ❎ Obs: muitos arquivos contém vários comentários meus, pois é a maneira como gosto de estudar e acho mais facil de absorver o conteúdo, porém eu sei que em um código sério isto não é aceitável. Relevem por favor! ;)
 
 
