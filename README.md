@@ -41,6 +41,9 @@ Nesta pasta estão contidos os exercicios que fiz para a criação de um formul�
 ### Pasta formulario-desafio-src
 A proposta desse desafio é criar um formulario que contenha nome e sobrenome, email, senha e um botão para armazenar os dados. Foram criados dois arquivos 'NomeCompleto.vue' e 'Rotulo.vue' que serão importados para o arquivo 'App.vue'.
 
+### Pasta diretivas-exercicios-src
+Nos exercícios deste módulo vimos as diretivas <code>v-text</code>, <code>v-html</code>, métodos hooks (<code>bind</code>, <code>inserted</code>, <code>update</code>, <code>component</code>, <code>unbind</code>)
+
 ❎ Obs: muitos arquivos contém vários comentários meus, pois é a maneira como gosto de estudar e acho mais facil de absorver o conteúdo, porém eu sei que em um código sério isto não é aceitável. Relevem por favor! ;)
 
 
