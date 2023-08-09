@@ -47,6 +47,10 @@ Nos exercícios deste módulo vimos as diretivas <code>v-text</code>, <code>v-ht
 ### Pasta diretivas-desafio-src
 Para este desafio foi pedido escrevessemos uma diretiva que funcione com o v-on. 
 
+### Pasta filtros-mixins-exercicios-src
+Esta pasta contem arquivos referentes ao modulo de filtros e mixins do curso. Neste exercicio foi criado um filtro que inverte
+uma determinada ordem de strings, numeros ou caracteres.
+
 
 ❎ Obs: muitos arquivos contém vários comentários meus, pois é a maneira como gosto de estudar e acho mais facil de absorver o conteúdo, porém eu sei que em um código sério isto não é aceitável. Relevem por favor! ;)
 
