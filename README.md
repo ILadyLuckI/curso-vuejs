@@ -54,6 +54,9 @@ uma determinada ordem de strings, numeros ou caracteres.
 ### Pasta filtros-mixins-desafio-src
 Neste desafio o filtro deve contar o tamanho de cada palavra e escrever o numero relativo ao tamanho ao lado de cada palavra. Para isto foi criado um filtro que contém uma função que vai separar, mapear e unir novamente cada palavra.
 
+### Pasta super-quiz-src
+Neste desafio criamos um quiz, para demosntrar como ficam as animações com css.
+
 
 ❎ Obs: muitos arquivos contém vários comentários meus, pois é a maneira como gosto de estudar e acho mais facil de absorver o conteúdo, porém eu sei que em um código sério isto não é aceitável. Relevem por favor! ;)
 
